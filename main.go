@@ -10,6 +10,7 @@ import (
 
 var (
 	apps = map[string]func([]string, *gobox.IOs) int{
+		"awk":      gobox.Awk,
 		"basename": gobox.Basename,
 		"false":    gobox.False,
 		"true":     gobox.True,
